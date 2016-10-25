@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('./fonts/Gotham-Medium.WOFF') format('wofff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./fonts/Gotham-Bold.WOFF') format('wofff');
+  font-weight:bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./fonts/Gotham-Book.WOFF') format('wofff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Gotham', Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #4A4A4A;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 0;
+
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.container p {
+  font-size: 1.25em;
+  font-weight: lighter;
+  margin: 0;
+  padding: 2em 0;
+  line-height: 1.3;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  flex: 5;
+}
+
+.header {
+  flex: 0 0 auto;
+  padding: 40px 0 0 40px;
+  box-sizing: border-box;
+}
+
+
+.content {
+  padding: 0 40px 0 40px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  flex: 0 0 auto;
+  padding: 0 0 40px 40px;
+  box-sizing: border-box;
+}
+
+
+.poster-background {
+  background-image:url('./background.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  flex: 7;
+}
+
+.subscribe-form input {
+  padding: 11px 20px;
+  font-size: 1em;
+  font-weight: lighter;
+  width: 22vw;
+  border-radius: 20px;
+  border: 1px solid #9B9B9B;
+}
+
+.subscribe-form button {
+  padding: 11.5px 30px;
+  text-align: center;
+  background-color: #2CBB57;
+  font-size: 1em;
+  font-weight: lighter;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  margin-left: 0.5em;
+}
+
+.social-icons {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.social-icons li:first-child {
+  padding-left: 0;
+}
+
+.social-icons li:last-child {
+  padding-right: 0;
+}
+
+.social-icons li svg:hover #facebook,
+svg:hover #instagram,
+svg:hover #twitter {
+  fill: #111;
+}
